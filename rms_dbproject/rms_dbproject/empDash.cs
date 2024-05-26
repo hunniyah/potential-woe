@@ -17,7 +17,6 @@ namespace rms_dbproject
         {
             InitializeComponent();
         }
-        
 
         private void employee_dashboard_Load(object sender, EventArgs e)
         {
@@ -98,7 +97,7 @@ namespace rms_dbproject
         private void tb_options_Click(object sender, EventArgs e)
         {
             optionsTransition.Start();
-            ShowPanel(optionsPanel);
+            
         }
 
         private void tb_home_Click(object sender, EventArgs e)
@@ -121,7 +120,7 @@ namespace rms_dbproject
             homePanel.Visible = false;
             attendancePanel.Visible = false;
             salaryPanel.Visible = false;
-            optionsPanel.Visible = false;
+            
 
             panel.Visible = true;
         }

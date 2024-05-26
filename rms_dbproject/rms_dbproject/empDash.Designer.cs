@@ -49,20 +49,20 @@
             optionsTransition = new System.Windows.Forms.Timer(components);
             sidebarTransition = new System.Windows.Forms.Timer(components);
             fileSystemWatcher1 = new FileSystemWatcher();
+            gunaAreaDataset1 = new Guna.Charts.WinForms.GunaAreaDataset();
             homePanel = new FlowLayoutPanel();
-            salaryPanel = new FlowLayoutPanel();
+            panel7 = new Panel();
+            lbl_welcome = new Label();
+            empDetails_panel = new Panel();
             attendancePanel = new Panel();
             lbl_attendance = new Label();
             attendanceData = new DataGridView();
             panel8 = new Panel();
-            panel9 = new ReaLTaiizor.Controls.Panel();
-            lbl_salary = new Label();
+            salaryPanel = new FlowLayoutPanel();
             SalaryDatagrid = new FlowLayoutPanel();
-            panel7 = new Panel();
-            lbl_welcome = new Label();
-            empDetails_panel = new Panel();
-            gunaAreaDataset1 = new Guna.Charts.WinForms.GunaAreaDataset();
-            optionsPanel = new Panel();
+            lbl_salary = new Label();
+            panel9 = new Panel();
+            salaryData = new Panel();
             topbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btn_menu).BeginInit();
             sidebar.SuspendLayout();
@@ -75,11 +75,11 @@
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             homePanel.SuspendLayout();
-            salaryPanel.SuspendLayout();
+            panel7.SuspendLayout();
             attendancePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)attendanceData).BeginInit();
+            salaryPanel.SuspendLayout();
             panel9.SuspendLayout();
-            panel7.SuspendLayout();
             SuspendLayout();
             // 
             // nightControlBox1
@@ -224,7 +224,7 @@
             tb_salary.Location = new Point(-9, -12);
             tb_salary.Name = "tb_salary";
             tb_salary.Normalforecolor1 = Color.White;
-            tb_salary.NormalImage1 = Properties.Resources.scrol21;
+            tb_salary.NormalImage1 = Properties.Resources.scrol2;
             tb_salary.Padding = new Padding(25, 0, 0, 0);
             tb_salary.Size = new Size(351, 131);
             tb_salary.TabIndex = 6;
@@ -348,117 +348,30 @@
             fileSystemWatcher1.EnableRaisingEvents = true;
             fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // gunaAreaDataset1
+            // 
+            gunaAreaDataset1.BorderColor = Color.Empty;
+            gunaAreaDataset1.FillColor = Color.Empty;
+            gunaAreaDataset1.Label = "Area1";
+            // 
             // homePanel
             // 
-            homePanel.Controls.Add(salaryPanel);
             homePanel.Controls.Add(panel7);
             homePanel.Controls.Add(empDetails_panel);
-            homePanel.Location = new Point(290, 57);
+            homePanel.Dock = DockStyle.Fill;
+            homePanel.Location = new Point(295, 56);
             homePanel.Name = "homePanel";
-            homePanel.Size = new Size(1032, 616);
-            homePanel.TabIndex = 4;
-            homePanel.Paint += homePanel_Paint;
-            // 
-            // salaryPanel
-            // 
-            salaryPanel.Controls.Add(attendancePanel);
-            salaryPanel.Controls.Add(panel9);
-            salaryPanel.Controls.Add(SalaryDatagrid);
-            salaryPanel.Location = new Point(3, 3);
-            salaryPanel.Name = "salaryPanel";
-            salaryPanel.Size = new Size(1029, 614);
-            salaryPanel.TabIndex = 4;
-            salaryPanel.Visible = false;
-            // 
-            // attendancePanel
-            // 
-            attendancePanel.Controls.Add(lbl_attendance);
-            attendancePanel.Controls.Add(attendanceData);
-            attendancePanel.Controls.Add(panel8);
-            attendancePanel.Location = new Point(3, 3);
-            attendancePanel.Name = "attendancePanel";
-            attendancePanel.Size = new Size(1026, 604);
-            attendancePanel.TabIndex = 4;
-            attendancePanel.Paint += attendancePanel_Paint_1;
-            // 
-            // lbl_attendance
-            // 
-            lbl_attendance.AutoSize = true;
-            lbl_attendance.Font = new Font("Georgia", 22F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_attendance.ForeColor = Color.FromArgb(1, 20, 37);
-            lbl_attendance.Location = new Point(190, 40);
-            lbl_attendance.Name = "lbl_attendance";
-            lbl_attendance.Size = new Size(493, 51);
-            lbl_attendance.TabIndex = 1;
-            lbl_attendance.Text = "Your Attendance Report";
-            lbl_attendance.TextAlign = ContentAlignment.TopCenter;
-            lbl_attendance.Click += lbl_attendance_Click;
-            // 
-            // attendanceData
-            // 
-            attendanceData.AllowUserToAddRows = false;
-            attendanceData.AllowUserToDeleteRows = false;
-            attendanceData.BackgroundColor = Color.FromArgb(92, 124, 137);
-            attendanceData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            attendanceData.Dock = DockStyle.Bottom;
-            attendanceData.GridColor = Color.White;
-            attendanceData.Location = new Point(0, 157);
-            attendanceData.Name = "attendanceData";
-            attendanceData.ReadOnly = true;
-            attendanceData.RowHeadersWidth = 62;
-            attendanceData.Size = new Size(1026, 447);
-            attendanceData.TabIndex = 2;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.FromArgb(1, 20, 37);
-            panel8.Location = new Point(0, 40);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(1029, 51);
-            panel8.TabIndex = 3;
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.FromArgb(1, 20, 37);
-            panel9.Controls.Add(lbl_salary);
-            panel9.EdgeColor = Color.FromArgb(32, 41, 50);
-            panel9.Location = new Point(3, 613);
-            panel9.Name = "panel9";
-            panel9.Padding = new Padding(5);
-            panel9.Size = new Size(1026, 99);
-            panel9.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            panel9.TabIndex = 0;
-            panel9.Text = "panel9";
-            // 
-            // lbl_salary
-            // 
-            lbl_salary.AutoSize = true;
-            lbl_salary.Font = new Font("Georgia", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_salary.ForeColor = Color.White;
-            lbl_salary.ImageAlign = ContentAlignment.TopRight;
-            lbl_salary.Location = new Point(28, 22);
-            lbl_salary.Name = "lbl_salary";
-            lbl_salary.Size = new Size(432, 46);
-            lbl_salary.TabIndex = 1;
-            lbl_salary.Text = "Your Salary Estimation";
-            // 
-            // SalaryDatagrid
-            // 
-            SalaryDatagrid.Location = new Point(3, 718);
-            SalaryDatagrid.Name = "SalaryDatagrid";
-            SalaryDatagrid.Size = new Size(894, 509);
-            SalaryDatagrid.TabIndex = 1;
+            homePanel.Size = new Size(1027, 617);
+            homePanel.TabIndex = 10;
             // 
             // panel7
             // 
-            panel7.Anchor = AnchorStyles.None;
             panel7.BackColor = Color.FromArgb(92, 124, 137);
             panel7.Controls.Add(lbl_welcome);
-            panel7.Location = new Point(3, 623);
+            panel7.Location = new Point(3, 3);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1029, 151);
+            panel7.Size = new Size(1272, 151);
             panel7.TabIndex = 0;
-            panel7.Paint += panel7_Paint;
             // 
             // lbl_welcome
             // 
@@ -473,33 +386,118 @@
             // 
             // empDetails_panel
             // 
-            empDetails_panel.Location = new Point(3, 780);
+            empDetails_panel.Location = new Point(3, 160);
             empDetails_panel.Name = "empDetails_panel";
-            empDetails_panel.Size = new Size(1017, 444);
+            empDetails_panel.Size = new Size(1272, 525);
             empDetails_panel.TabIndex = 1;
-            empDetails_panel.Paint += empDetails_panel_Paint;
             // 
-            // gunaAreaDataset1
+            // attendancePanel
             // 
-            gunaAreaDataset1.BorderColor = Color.Empty;
-            gunaAreaDataset1.FillColor = Color.Empty;
-            gunaAreaDataset1.Label = "Area1";
+            attendancePanel.Controls.Add(lbl_attendance);
+            attendancePanel.Controls.Add(attendanceData);
+            attendancePanel.Controls.Add(panel8);
+            attendancePanel.Dock = DockStyle.Fill;
+            attendancePanel.Location = new Point(295, 56);
+            attendancePanel.Name = "attendancePanel";
+            attendancePanel.Size = new Size(1027, 617);
+            attendancePanel.TabIndex = 11;
             // 
-            // optionsPanel
+            // lbl_attendance
             // 
-            optionsPanel.Location = new Point(290, 57);
-            optionsPanel.Name = "optionsPanel";
-            optionsPanel.Size = new Size(1032, 616);
-            optionsPanel.TabIndex = 5;
-            optionsPanel.Visible = false;
+            lbl_attendance.AutoSize = true;
+            lbl_attendance.Font = new Font("Georgia", 22F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_attendance.ForeColor = Color.FromArgb(1, 20, 37);
+            lbl_attendance.Location = new Point(190, 40);
+            lbl_attendance.Name = "lbl_attendance";
+            lbl_attendance.Size = new Size(493, 51);
+            lbl_attendance.TabIndex = 1;
+            lbl_attendance.Text = "Your Attendance Report";
+            lbl_attendance.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // attendanceData
+            // 
+            attendanceData.AllowUserToAddRows = false;
+            attendanceData.AllowUserToDeleteRows = false;
+            attendanceData.BackgroundColor = Color.FromArgb(92, 124, 137);
+            attendanceData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            attendanceData.Dock = DockStyle.Bottom;
+            attendanceData.GridColor = Color.White;
+            attendanceData.Location = new Point(0, 170);
+            attendanceData.Name = "attendanceData";
+            attendanceData.ReadOnly = true;
+            attendanceData.RowHeadersWidth = 62;
+            attendanceData.Size = new Size(1027, 447);
+            attendanceData.TabIndex = 2;
+            // 
+            // panel8
+            // 
+            panel8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel8.BackColor = Color.FromArgb(1, 20, 37);
+            panel8.Location = new Point(0, 40);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(2111, 51);
+            panel8.TabIndex = 3;
+            // 
+            // salaryPanel
+            // 
+            salaryPanel.BackColor = Color.FromArgb(1, 20, 37);
+            salaryPanel.Controls.Add(SalaryDatagrid);
+            salaryPanel.Controls.Add(panel9);
+            salaryPanel.Controls.Add(salaryData);
+            salaryPanel.Dock = DockStyle.Fill;
+            salaryPanel.Location = new Point(295, 56);
+            salaryPanel.Name = "salaryPanel";
+            salaryPanel.Size = new Size(1027, 617);
+            salaryPanel.TabIndex = 12;
+            salaryPanel.Visible = false;
+            // 
+            // SalaryDatagrid
+            // 
+            SalaryDatagrid.Dock = DockStyle.Fill;
+            SalaryDatagrid.Location = new Point(3, 3);
+            SalaryDatagrid.Name = "SalaryDatagrid";
+            SalaryDatagrid.Size = new Size(1024, 0);
+            SalaryDatagrid.TabIndex = 1;
+            // 
+            // lbl_salary
+            // 
+            lbl_salary.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lbl_salary.AutoSize = true;
+            lbl_salary.BackColor = Color.FromArgb(0, 5, 199, 137);
+            lbl_salary.Font = new Font("Georgia", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_salary.ForeColor = Color.FromArgb(31, 73, 89);
+            lbl_salary.ImageAlign = ContentAlignment.TopRight;
+            lbl_salary.Location = new Point(363, 20);
+            lbl_salary.Name = "lbl_salary";
+            lbl_salary.Size = new Size(432, 46);
+            lbl_salary.TabIndex = 5;
+            lbl_salary.Text = "Your Salary Estimation";
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.White;
+            panel9.Controls.Add(lbl_salary);
+            panel9.Dock = DockStyle.Top;
+            panel9.Location = new Point(3, 9);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(1021, 96);
+            panel9.TabIndex = 6;
+            // 
+            // salaryData
+            // 
+            salaryData.Location = new Point(3, 111);
+            salaryData.Name = "salaryData";
+            salaryData.Size = new Size(1024, 410);
+            salaryData.TabIndex = 7;
             // 
             // employee_dashboard
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             ClientSize = new Size(1322, 673);
+            Controls.Add(salaryPanel);
+            Controls.Add(attendancePanel);
             Controls.Add(homePanel);
-            Controls.Add(optionsPanel);
             Controls.Add(sidebar);
             Controls.Add(topbar);
             FormBorderStyle = FormBorderStyle.None;
@@ -519,14 +517,14 @@
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
             homePanel.ResumeLayout(false);
-            salaryPanel.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
             attendancePanel.ResumeLayout(false);
             attendancePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)attendanceData).EndInit();
+            salaryPanel.ResumeLayout(false);
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -553,19 +551,19 @@
         private button btn_logout;
         private button tb_salary;
         private Button tab_advanced;
+        private Guna.Charts.WinForms.GunaAreaDataset gunaAreaDataset1;
+        private FlowLayoutPanel salaryPanel;
+        private FlowLayoutPanel SalaryDatagrid;
+        private Panel panel9;
+        private Label lbl_salary;
+        private Panel attendancePanel;
+        private Label lbl_attendance;
+        private DataGridView attendanceData;
+        private Panel panel8;
         private FlowLayoutPanel homePanel;
         private Panel panel7;
-        private Panel empDetails_panel;
-        private Panel attendancePanel;
         private Label lbl_welcome;
-        private DataGridView attendanceData;
-        private Label lbl_attendance;
-        private Guna.Charts.WinForms.GunaAreaDataset gunaAreaDataset1;
-        private Panel panel8;
-        private Label lbl_salary;
-        private FlowLayoutPanel salaryPanel;
-        private ReaLTaiizor.Controls.Panel panel9;
-        private FlowLayoutPanel SalaryDatagrid;
-        private Panel optionsPanel;
+        private Panel empDetails_panel;
+        private Panel salaryData;
     }
 }
