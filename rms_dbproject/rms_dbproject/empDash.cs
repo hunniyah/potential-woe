@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -198,6 +199,24 @@ namespace rms_dbproject
         private void lbl_welcome_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbl_salDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tab_advanced_Click(object sender, EventArgs e)
+        {
+          
+            {
+                // Create an instance of the Inventory form
+                Inventory inventoryForm = new Inventory();
+
+                // Show the Inventory form
+                inventoryForm.Show();
+                this.Close();
+            }
         }
     }
 }

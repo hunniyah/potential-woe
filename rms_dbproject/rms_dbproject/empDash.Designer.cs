@@ -313,6 +313,7 @@
             tab_advanced.TabIndex = 5;
             tab_advanced.Text = "                  ADVANCED                    ";
             tab_advanced.UseVisualStyleBackColor = false;
+            tab_advanced.Click += tab_advanced_Click;
             // 
             // panel5
             // 
@@ -666,6 +667,7 @@
             lbl_salDate.TabIndex = 0;
             lbl_salDate.Text = "Date:";
             lbl_salDate.TextAlign = ContentAlignment.TopCenter;
+            lbl_salDate.Click += lbl_salDate_Click;
             // 
             // employee_dashboard
             // 
