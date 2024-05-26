@@ -1,6 +1,6 @@
 ﻿namespace rms_dbproject
 {
-    partial class Form2
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -30,24 +30,34 @@
         {
             SuspendLayout();
             // 
-            // Form2
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1255, 574);
+            ClientSize = new Size(1319, 600);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form2";
-            Text = "Form2";
+            Name = "Form3";
+            Text = "Form3";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel attendancePanel;
-        private Panel attendanceData;
-        private ReaLTaiizor.Controls.ParrotBarGraph atdncGraph;
-        private TableLayoutPanel attendanceTable;
-        private Label lbl_attendance;
-        private Panel panel8;
+        private FlowLayoutPanel salaryPanel;
+        private FlowLayoutPanel SalaryDatagrid;
+        private Panel panel9;
+        private Label lbl_salary;
+        private Panel salaryData;
+        private ReaLTaiizor.Controls.ParrotLineGraph salaryGraph;
+        private Label lbl_salAmount;
+        private Label lbl_salDate;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private Panel panel1;
+        private Label label1;
+        private Panel panel2;
+        private ReaLTaiizor.Controls.ParrotLineGraph parrotLineGraph1;
+        private Label label2;
+        private Label label3;
     }
 }

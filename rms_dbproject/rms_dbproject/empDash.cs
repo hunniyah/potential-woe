@@ -97,7 +97,7 @@ namespace rms_dbproject
         private void tb_options_Click(object sender, EventArgs e)
         {
             optionsTransition.Start();
-            
+
         }
 
         private void tb_home_Click(object sender, EventArgs e)
@@ -120,7 +120,7 @@ namespace rms_dbproject
             homePanel.Visible = false;
             attendancePanel.Visible = false;
             salaryPanel.Visible = false;
-            
+
 
             panel.Visible = true;
         }
@@ -151,6 +151,51 @@ namespace rms_dbproject
         }
 
         private void empDetails_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void attendanceData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void attendanceTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void atdncGraph_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_empName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_empPosition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_empEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void empDetails_panel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_welcome_Click(object sender, EventArgs e)
         {
 
         }
