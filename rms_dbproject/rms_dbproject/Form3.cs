@@ -35,7 +35,7 @@ namespace rms_dbproject
 
         private void showData()
         {
-           
+
 
             string query2 = "select * from customer; select * from payment; select * from film_actor; select * from country; select * from store; select * from address; select * from city;";
             DataTable dataTable2 = loaddata(query2);
@@ -194,13 +194,24 @@ namespace rms_dbproject
         {
             this.Show();
         }
-       
+
         private void btn_addSupp_Click_1(object sender, EventArgs e)
         {
             addSupplierForm supplierForm = new addSupplierForm();
 
             // Show the addSupplierForm
             supplierForm.Show();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            employee_dashboard empDashForm = new employee_dashboard();
+
+            // Show the employee_dashboard form
+            empDashForm.Show();
+
+            // Close the current form
+            this.Close();
         }
     }
 }
