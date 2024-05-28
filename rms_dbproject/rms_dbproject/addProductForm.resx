@@ -117,10 +117,133 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="viewEmp_transition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_prodName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_prodName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_prodName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 14pt</value>
+  </data>
+  <data name="lbl_prodName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 207</value>
+  </data>
+  <data name="lbl_prodName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 32</value>
+  </data>
+  <data name="lbl_prodName.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_prodName.Text" xml:space="preserve">
+    <value>Product Name:</value>
+  </data>
+  <data name="&gt;&gt;lbl_prodName.Name" xml:space="preserve">
+    <value>lbl_prodName</value>
+  </data>
+  <data name="&gt;&gt;lbl_prodName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_prodName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_prodName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtbx_prodName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 18pt</value>
+  </data>
+  <data name="txtbx_prodName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 184</value>
+  </data>
+  <data name="txtbx_prodName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 72</value>
+  </data>
+  <data name="txtbx_prodName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtbx_prodName.Name" xml:space="preserve">
+    <value>txtbx_prodName</value>
+  </data>
+  <data name="&gt;&gt;txtbx_prodName.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.CyberTextBox, ReaLTaiizor, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtbx_prodName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtbx_prodName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_confirm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 11pt</value>
+  </data>
+  <data name="btn_confirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 289</value>
+  </data>
+  <data name="btn_confirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 45</value>
+  </data>
+  <data name="btn_confirm.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_confirm.Name" xml:space="preserve">
+    <value>btn_confirm</value>
+  </data>
+  <data name="&gt;&gt;btn_confirm.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.CyberButton, ReaLTaiizor, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btn_confirm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_confirm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nightControlBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="nightControlBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 0</value>
+  </data>
+  <data name="nightControlBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 31</value>
+  </data>
+  <data name="nightControlBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.Name" xml:space="preserve">
+    <value>nightControlBox1</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.NightControlBox, ReaLTaiizor, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>882, 481</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>addProductForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>addProductForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
